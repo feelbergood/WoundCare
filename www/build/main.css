@@ -24407,3 +24407,7 @@ page-search-patient .select {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
+page-wound-legulcer .range {
+  text-align: left;
+}

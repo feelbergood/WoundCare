@@ -15,4 +15,87 @@
 
 <ion-content padding>
 
+  <ion-list>
+    <ion-item>
+      <ion-card>
+        <ion-card-header>
+          Ulcer Description
+        </ion-card-header>
+        <ion-card-content>
+          Ulcer description with the data collected during general assessment
+        </ion-card-content>
+      </ion-card>
+    </ion-item> 
+  
+    <!--Likely cause of ulcer-->
+    <ion-item>
+      <ion-label>Likely cause of ulcer</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <!--Grade of pressure ulceration-->
+    <ion-item>
+      <ion-label>
+        Grade of pressure ulceratio
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-select multiple="true">
+        <ion-option>Ungradable/Unstageable</ion-option>
+        <ion-option>Grade 1</ion-option>
+        <ion-option>Grade 2</ion-option>
+        <ion-option>Grade 3</ion-option>
+        <ion-option>Grade 4</ion-option>
+        <ion-option>Mucosal</ion-option>
+        <ion-option>Moisture</ion-option>             
+      </ion-select>
+    </ion-item>
+
+     <ion-item>
+      <ion-label>Incident form completed</ion-label>
+      <ion-select>
+        <ion-option>Yes</ion-option>
+        <ion-option>No</ion-option>
+      </ion-select>
+    </ion-item>  
+
+    <ion-item>
+      <ion-label>Base line wound size</ion-label>
+    </ion-item>  
+
+    <ion-item>
+      <ion-label>Undermining/tunnelling to wound</ion-label>
+      <ion-select>
+        <ion-option>Yes</ion-option>
+        <ion-option>No</ion-option>
+      </ion-select>
+    </ion-item>  
+    <ion-item>
+      <ion-label>Odour form wound</ion-label>
+      <ion-select>
+        <ion-option>Yes</ion-option>
+        <ion-option>No</ion-option>
+      </ion-select>
+    </ion-item>    
+    <ion-item>
+      <ion-label>Wound swab taken and sent</ion-label>
+      <ion-select>
+        <ion-option>Yes</ion-option>
+        <ion-option>No</ion-option>
+      </ion-select>
+    </ion-item>  
+        <ion-item>
+      <ion-label>Biopsy taken and sent</ion-label>
+      <ion-select>
+        <ion-option>Yes</ion-option>
+        <ion-option>No</ion-option>
+      </ion-select>
+    </ion-item>    
+  </ion-list>
+
+  <button type="submit" name="submit">Submit</button>
+
+
 </ion-content>

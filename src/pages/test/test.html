@@ -10,9 +10,33 @@
     <ion-title>test</ion-title>
   </ion-navbar>
 
-</ion-header>
-
+</ion-header>  
 
 <ion-content padding>
-  <button (click)='gotoPage(SearchPatientPage)' ion-button full>Search Patient</button> 
+  <ion-list>
+    <ion-item>  
+      <button (click)="gotoP1()" ion-button full>Search Patient</button> 
+    </ion-item>
+    <ion-item>
+      <button (click)="gotoP2()" ion-button full>Db Review</button> 
+    </ion-item>
+    <ion-item>
+      <button (click)="gotoP3()" ion-button full>Leg Ulcer</button> 
+    </ion-item>
+    <ion-item>
+      <button (click)="gotoP4()" ion-button full>Podiatry</button> 
+    </ion-item>
+    <ion-item>  
+      <button (click)="gotoP5()" ion-button full>Other</button> 
+    </ion-item>
+    <ion-item>
+      <button (click)="gotoP6()" ion-button full>Pressure</button> 
+    </ion-item>
+    <ion-item>
+      <button (click)="gotoP7()" ion-button full>Assessment Review</button> 
+    </ion-item>
+    <ion-item>
+      <button (click)="gotoP8()" ion-button full>Reassessment</button> 
+    </ion-item>    
+  </ion-list>
 </ion-content>

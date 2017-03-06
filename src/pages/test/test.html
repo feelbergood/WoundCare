@@ -7,36 +7,20 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>test</ion-title>
+    <div class="text-center">
+      <ion-title>test</ion-title>
+    </div>
   </ion-navbar>
 
-</ion-header>  
+</ion-header>
+
 
 <ion-content padding>
-  <ion-list>
-    <ion-item>  
-      <button (click)="gotoP1()" ion-button full>Search Patient</button> 
-    </ion-item>
-    <ion-item>
-      <button (click)="gotoP2()" ion-button full>Db Review</button> 
-    </ion-item>
-    <ion-item>
-      <button (click)="gotoP3()" ion-button full>Leg Ulcer</button> 
-    </ion-item>
-    <ion-item>
-      <button (click)="gotoP4()" ion-button full>Podiatry</button> 
-    </ion-item>
-    <ion-item>  
-      <button (click)="gotoP5()" ion-button full>Other</button> 
-    </ion-item>
-    <ion-item>
-      <button (click)="gotoP6()" ion-button full>Pressure</button> 
-    </ion-item>
-    <ion-item>
-      <button (click)="gotoP7()" ion-button full>Assessment Review</button> 
-    </ion-item>
-    <ion-item>
-      <button (click)="gotoP8()" ion-button full>Reassessment</button> 
-    </ion-item>    
-  </ion-list>
+  <button (click)='gotoHomePage()' ion-button full>Home</button>
+  <button (click)='gotoSearchPatientPage()' ion-button full>Search Patient</button>
+  <button (click)='gotoConsentPage()' ion-button full>Consent</button>
+  <button (click)='gotoPhotoPage()' ion-button full>Take photo</button>
+  <button (click)='gotoGenericMedicalPage()' ion-button full>Generic Medical Assessment</button>
+  <button (click)='gotoBodyMapPage()' ion-button full>Body Map</button>
+  <!--<button (click)='gotoPage()' ion-button full>Consent Page</button>-->
 </ion-content>

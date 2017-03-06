@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+
+import { Component, ViewChild} from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+
 
 /*
   Generated class for the BodyMap page.

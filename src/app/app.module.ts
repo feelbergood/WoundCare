@@ -11,6 +11,16 @@ import { WoundOtherPage } from '../pages/wound-other/wound-other';
 import { WoundPressurePage } from '../pages/wound-pressure/wound-pressure';
 import { ReviewAssessPage } from '../pages/review-assess/review-assess';
 import { ReassessPage } from '../pages/reassess/reassess';
+import { FollowUpPage } from '../pages/follow-up/follow-up';
+import { PhotoPage } from '../pages/photo/photo';
+import { ConsentPage } from '../pages/consent/consent';
+import { BodyMapPage } from '../pages/body-map/body-map';
+import { GenericMedicalPage } from '../pages/generic-medical/generic-medical';
+import { SignaturePadModule } from 'angular2-signaturepad';
+import { Storage } from '@ionic/storage';
+import { PatientSummaryPage } from '../pages/patient-summary/patient-summary';
+import { PatientListPage } from '../pages/patient-list/patient-list';
+import { GeneralAssessPage } from '../pages/general-assess/general-assess';
 
 @NgModule({
   declarations: [
@@ -24,10 +34,19 @@ import { ReassessPage } from '../pages/reassess/reassess';
     WoundOtherPage,
     WoundPressurePage,
     ReviewAssessPage,
-    ReassessPage
+    ReassessPage,
+    FollowUpPage,
+    ConsentPage,
+    PhotoPage,
+    GenericMedicalPage,
+    BodyMapPage,
+    PatientSummaryPage,
+    PatientListPage,
+    GeneralAssessPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    SignaturePadModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -41,8 +60,19 @@ import { ReassessPage } from '../pages/reassess/reassess';
     WoundOtherPage,
     WoundPressurePage,
     ReviewAssessPage,
-    ReassessPage
+    ReassessPage,
+    FollowUpPage,
+    ConsentPage,
+    PhotoPage,
+    GenericMedicalPage,
+    BodyMapPage,
+    PatientSummaryPage,
+    PatientListPage,
+    GeneralAssessPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Storage
+  ]
 })
 export class AppModule {}

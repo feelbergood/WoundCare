@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { GenericMedicalPage } from '../generic-medical/generic-medical';
 /*
   Generated class for the Reassess page.
 
@@ -17,6 +17,10 @@ export class ReassessPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ReassessPage');
+  }
+
+  gotoGene(){
+    this.navCtrl.push(GenericMedicalPage);
   }
 
 }

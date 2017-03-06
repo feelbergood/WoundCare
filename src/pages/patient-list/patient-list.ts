@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { ConsentPage } from '../consent/consent';
 /*
   Generated class for the PatientList page.
 
@@ -17,6 +17,10 @@ export class PatientListPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PatientListPage');
+  }
+
+  gotoConsent(){
+    this.navCtrl.push(ConsentPage);
   }
 
 }

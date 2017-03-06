@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { WoundPodiatryPage } from '../wound-podiatry/wound-podiatry';
 
 /*
   Generated class for the WoundLegulcer page.
@@ -19,4 +20,7 @@ export class WoundLegulcerPage {
     console.log('ionViewDidLoad WoundLegulcerPage');
   }
 
+  gotoPod() {
+    this.navCtrl.push(WoundPodiatryPage);
+  }
 }

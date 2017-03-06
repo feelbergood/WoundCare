@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { PatientSummaryPage } from '../patient-summary/patient-summary';
 /*
   Generated class for the DbReview page.
 
@@ -17,6 +17,10 @@ export class DbReviewPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DbReviewPage');
+  }
+
+  gotoPtsum(){
+    this.navCtrl.push(PatientSummaryPage);
   }
 
 }

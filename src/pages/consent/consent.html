@@ -6,13 +6,54 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>consent</ion-title>
+  <ion-navbar color="primary">
+    <div class="text-center">
+      <ion-title>Consent</ion-title>
+    </div>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <p>Lorem ipsum dolor sit amet, usu te choro nominati deterruisset, sed ne duis copiosae sapientem. Omnis quidam eligendi te vis, no mea quot fierent eleifend, ea errem mucius vix. In mel autem blandit, vix elit accumsan sadipscing ad. Primis tritani an nam, eu nam perfecto argumentum. An fierent adipisci reformidans qui. An eam suas platonem maiestatis.
+     Nobis aliquid nec an. Nihil quaerendum qui ad, putant epicuri at sit. Eam ex porro eligendi quaerendum, nullam labore ius an, mei agam mazim cu. Mel in vocent fierent deterruisset. Nam at equidem platonem quaerendum, an eos sale erroribus prodesset.</p>
+  <ion-item>
+    <ion-label>I agree with the above terms and conditions</ion-label>
+    <ion-checkbox></ion-checkbox>
+  </ion-item>
+
+  <div class="title">Please draw your Signature</div>
+<ion-row [ngClass]="{'drawing-active': isDrawing}">
+  <ion-col></ion-col>
+  <ion-col>
+    <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>
+  </ion-col>
+  <ion-col></ion-col>
+</ion-row>
+
+<button ion-button full color="danger" (click)="clearPad()">Clear</button>
+<button ion-button full color="secondary" (click)="savePad()">Save</button>
+<!--
+<ion-row>
+  <ion-col></ion-col>
+  <ion-col width-80>
+    <img [src]="signature"/>
+  </ion-col>
+  <ion-col></ion-col>
+</ion-row>
+-->
+
 
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <div class="text-center">
+       <button ion-button round color="light"(click)="gotoPhoto()">Take Photo</button>
+    </div>
+    <div class="text-center">
+       <button ion-button round end color="light" (click)="gotoReviewass()">Follow up</button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

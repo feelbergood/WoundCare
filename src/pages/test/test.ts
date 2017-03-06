@@ -8,6 +8,11 @@ import { WoundOtherPage } from '../wound-other/wound-other';
 import { WoundPressurePage } from '../wound-pressure/wound-pressure';
 import { ReviewAssessPage } from '../review-assess/review-assess';
 import { ReassessPage } from '../reassess/reassess';
+import { ConsentPage } from '../consent/consent';
+import { GenericMedicalPage} from '../generic-medical/generic-medical'
+import { HomePage } from '../home/home'
+import { PhotoPage } from '../photo/photo'
+import { BodyMapPage} from '../body-map/body-map'
 
 /*
   Generated class for the Test page.
@@ -58,4 +63,22 @@ export class TestPage {
   gotoP8(){
     this.navCtrl.push(ReassessPage);
   }  
+  gotoHomePage(){
+    this.navCtrl.push(HomePage);
+  }
+  gotoConsentPage(){
+    this.navCtrl.push(ConsentPage);
+  }
+  gotoPhotoPage(){
+    this.navCtrl.push(PhotoPage);
+  }
+  gotoSearchPatientPage(){
+    this.navCtrl.push(SearchPatientPage);
+  }
+  gotoGenericMedicalPage(){
+    this.navCtrl.push(GenericMedicalPage);
+  }
+  gotoBodyMapPage(){
+    this.navCtrl.push(BodyMapPage);
+  }
 }

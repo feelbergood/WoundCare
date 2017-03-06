@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { ReassessPage } from '../reassess/reassess';
+import { FollowUpPage } from '../follow-up/follow-up';
 /*
   Generated class for the ReviewAssess page.
 
@@ -17,6 +18,14 @@ export class ReviewAssessPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ReviewAssessPage');
+  }
+
+  gotoReass() {
+    this.navCtrl.push(ReassessPage);
+  }
+
+  gotoFup() {
+    this.navCtrl.push(FollowUpPage);
   }
 
 }

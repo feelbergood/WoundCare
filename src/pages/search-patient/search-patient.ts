@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { PatientListPage } from '../patient-list/patient-list';
 /*
   Generated class for the SearchPatient page.
 
@@ -17,6 +17,10 @@ export class SearchPatientPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SearchPatientPage');
+  }
+
+  gotoPtlist(){
+    this.navCtrl.push(PatientListPage);
   }
 
 }

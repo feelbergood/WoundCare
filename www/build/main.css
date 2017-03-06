@@ -24387,6 +24387,22 @@ ion-navbar.toolbar {
   }
 }
 
+page-consent .drawing-active {
+  background: #d6fffc;
+}
+
+page-consent .title {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+page-home .login-box {
+  height: 60%;
+  display: block;
+  vertical-align: middle;
+}
+
 page-search-patient .logo {
   width: 80%;
   height: 80%;

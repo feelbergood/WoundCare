@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { WoundLegulcerPage } from '../wound-legulcer/wound-legulcer';
+import { WoundOtherPage } from '../wound-other/wound-other';
+import { WoundPressurePage } from '../wound-pressure/wound-pressure';
 
 /*
   Generated class for the GeneralAssess page.
@@ -18,5 +21,13 @@ export class GeneralAssessPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad GeneralAssessPage');
   }
-
+  gotoLegulcer(){
+    this.navCtrl.push(WoundLegulcerPage);
+  }
+  gotoOther(){
+    this.navCtrl.push(WoundOtherPage);
+  }
+  gotoPreulcer(){
+    this.navCtrl.push(WoundPressurePage);
+  }
 }

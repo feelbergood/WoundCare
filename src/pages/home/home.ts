@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-
 import { NavController } from 'ionic-angular';
-
 import { TestPage } from '../test/test';
 
 @Component({
@@ -11,7 +9,7 @@ import { TestPage } from '../test/test';
 
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {    
+  constructor(public navCtrl: NavController) {
   }
 
   gotoTest(){

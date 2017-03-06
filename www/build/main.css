@@ -24387,6 +24387,39 @@ ion-navbar.toolbar {
   }
 }
 
+.text-center {
+  text-align: center;
+}
+
+page-consent .drawing-active {
+  background: #d6fffc;
+}
+
+page-consent .title {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+page-generic-medical .item .row, page-generic-medical .item .col {
+  padding: 0;
+}
+
+page-generic-medical .p {
+  padding-top: 20px;
+  padding-left: 11px;
+}
+
+page-generic-medical .pTop {
+  padding-top: 20px;
+}
+
+page-home .login-box {
+  height: 60%;
+  display: block;
+  vertical-align: middle;
+}
+
 page-search-patient .logo {
   width: 80%;
   height: 80%;
@@ -24406,8 +24439,4 @@ page-search-patient .select {
   color: primary;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-}
-
-page-wound-legulcer .range {
-  text-align: left;
 }

@@ -1,7 +1,6 @@
 //source:https://devdactic.com/signature-drawpad-ionic-2/
 
 import { Component, ViewChild } from '@angular/core';
-//import { NavController } from 'ionic-angular';
 import { SignaturePad } from 'angular2-signaturepad/signature-pad';
 import { Storage } from '@ionic/storage';
 import { ToastController } from 'ionic-angular';

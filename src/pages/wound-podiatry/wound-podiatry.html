@@ -5,9 +5,8 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>Podiatry wound assessment</ion-title>
+  <ion-navbar color="primary">
+    <ion-title><div class="text-center">Podiatry Wound Assessment</div></ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -16,7 +15,7 @@
   <ion-list>
     <!--Diabetes-->
     <ion-item>
-      <ion-label>Diabetes</ion-label>      
+      <ion-label>Diabetes</ion-label>
       <ion-select>
         <ion-option>Type 1</ion-option>
         <ion-option>Type 2</ion-option>
@@ -26,12 +25,12 @@
 
     <!--Dialysis-->
     <ion-item>
-      <ion-label>Dialysis</ion-label>      
+      <ion-label>Dialysis</ion-label>
       <ion-select>
         <ion-option>Yes</ion-option>
         <ion-option>No</ion-option>
       </ion-select>
-    </ion-item>  
+    </ion-item>
 
     <!-- Sinbad score -->
     <ion-item>
@@ -43,7 +42,7 @@
         <ion-option>forefoot</ion-option>
         <ion-option>mid/hindfoot</ion-option>
       </ion-select>
-    </ion-item>  
+    </ion-item>
     <ion-item>
       <ion-label>Ischaemia</ion-label>
       <ion-select>
@@ -57,7 +56,7 @@
         <ion-option>Yes</ion-option>
         <ion-option>No</ion-option>
       </ion-select>
-    </ion-item>    
+    </ion-item>
     <ion-item>
       <ion-label>Bacterial infection</ion-label>
       <ion-select>
@@ -80,7 +79,7 @@
       </ion-select>
     </ion-item>
 
-    <!--Possible Charcot's foot--> 
+    <!--Possible Charcot's foot-->
     <ion-item>
       <ion-label>Possible Charcot's foot</ion-label>
     </ion-item>
@@ -90,7 +89,7 @@
         <ion-option>Yes</ion-option>
         <ion-option>No</ion-option>
       </ion-select>
-    </ion-item>  
+    </ion-item>
     <ion-item>
       <ion-label>Absence of obvious infection</ion-label>
       <ion-select>
@@ -104,7 +103,7 @@
         <ion-option>Yes</ion-option>
         <ion-option>No</ion-option>
       </ion-select>
-    </ion-item>    
+    </ion-item>
     <ion-item>
       <ion-label>Inflammation</ion-label>
       <ion-select>
@@ -125,7 +124,7 @@
         <ion-option>Yes</ion-option>
         <ion-option>No</ion-option>
       </ion-select>
-    </ion-item>    
+    </ion-item>
 
     <!--Neuropathy-->
      <ion-item>
@@ -134,27 +133,34 @@
     <ion-item>
       <ion-label>Left</ion-label>
       <!--Numerical value 0-10/10-->
-    </ion-item>  
+    </ion-item>
     <ion-item>
       <ion-label>Right</ion-label>
       <!--Numerical value 0-10/10-->
-    </ion-item> 
+    </ion-item>
     <ion-item>
       <ion-label>Altered Sensation</ion-label>
       <ion-select>
         <ion-option>Yes</ion-option>
         <ion-option>No</ion-option>
       </ion-select>
-    </ion-item>    
+    </ion-item>
     <ion-item>
       <ion-label>Painful Neuropathy</ion-label>
       <ion-select>
         <ion-option>Yes</ion-option>
         <ion-option>No</ion-option>
       </ion-select>
-    </ion-item>   
-
+    </ion-item>
   </ion-list>
-
-  <button type="submit" name="submit">Submit</button>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <div class="text-center">
+      <div class="text-center">
+        <button ion-button round end color="light" (click)="gotoTreatmentPage()">Treatment Plan</button>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-footer>

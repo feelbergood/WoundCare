@@ -11,10 +11,10 @@ import { WoundPressurePage } from '../wound-pressure/wound-pressure';
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-general-assess',
-  templateUrl: 'general-assess.html'
+  selector: 'page-generic-wound',
+  templateUrl: 'generic-wound.html'
 })
-export class GeneralAssessPage {
+export class GenericWoundPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 

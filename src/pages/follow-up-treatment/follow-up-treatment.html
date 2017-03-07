@@ -1,0 +1,32 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title><div class="text-center">Follow-up Treatment Plan</div></ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-card>
+        <ion-card-header>
+          Last Treatment
+        </ion-card-header>
+        <ion-card-content>
+          Details
+        </ion-card-content>
+      </ion-card>
+      <button ion-button round end color="light">Delete</button>
+      <button ion-button round end color="light">Add</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <div class="text-center">
+      <button ion-button round end color="light" (click)="gotoTreatmentPage()">Treatment Plan</button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

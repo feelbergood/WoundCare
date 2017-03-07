@@ -5,11 +5,9 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>follow-up</ion-title>
+  <ion-navbar color="primary">
+    <ion-title><div class="text-center">Follow-up Assessment</div></ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
@@ -101,22 +99,28 @@
 
     <ion-item>
       <ion-label>
-        TNPT/VeraFlo (Number of pieces of foam/gauze inserted into ulcer or wound)        
+        TNPT/VeraFlo (Number of pieces of foam/gauze inserted into ulcer or wound)
       </ion-label>
     </ion-item>
 
     <ion-item>
       <ion-label>
-        Next planned dressing change        
+        Next planned dressing change
       </ion-label>
     </ion-item>
 
     <ion-item>
       <ion-label>
-        Comments       
+        Comments
       </ion-label>
     </ion-item>
-
   </ion-list>
-  <button type="submit" name="submit">Submit</button>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <div class="text-center">
+      <button ion-button round end color="light" type="submit" name="submit">Submit</button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

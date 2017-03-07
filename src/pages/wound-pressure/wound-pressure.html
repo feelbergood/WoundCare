@@ -5,11 +5,9 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>wound-pressure</ion-title>
+  <ion-navbar color="primary">
+    <ion-title><div class="text-center">Pressure Ulcer Assessment</div></ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
@@ -25,8 +23,8 @@
           Ulcer description with the data collected during general assessment
         </ion-card-content>
       </ion-card>
-    </ion-item> 
-  
+    </ion-item>
+
     <!--Likely cause of ulcer-->
     <ion-item>
       <ion-label>Likely cause of ulcer</ion-label>
@@ -49,7 +47,7 @@
         <ion-option>Grade 3</ion-option>
         <ion-option>Grade 4</ion-option>
         <ion-option>Mucosal</ion-option>
-        <ion-option>Moisture</ion-option>             
+        <ion-option>Moisture</ion-option>
       </ion-select>
     </ion-item>
 
@@ -59,11 +57,11 @@
         <ion-option>Yes</ion-option>
         <ion-option>No</ion-option>
       </ion-select>
-    </ion-item>  
+    </ion-item>
 
     <ion-item>
       <ion-label>Base line wound size</ion-label>
-    </ion-item>  
+    </ion-item>
 
     <ion-item>
       <ion-label>Undermining/tunnelling to wound</ion-label>
@@ -71,31 +69,35 @@
         <ion-option>Yes</ion-option>
         <ion-option>No</ion-option>
       </ion-select>
-    </ion-item>  
+    </ion-item>
     <ion-item>
       <ion-label>Odour form wound</ion-label>
       <ion-select>
         <ion-option>Yes</ion-option>
         <ion-option>No</ion-option>
       </ion-select>
-    </ion-item>    
+    </ion-item>
     <ion-item>
       <ion-label>Wound swab taken and sent</ion-label>
       <ion-select>
         <ion-option>Yes</ion-option>
         <ion-option>No</ion-option>
       </ion-select>
-    </ion-item>  
+    </ion-item>
         <ion-item>
       <ion-label>Biopsy taken and sent</ion-label>
       <ion-select>
         <ion-option>Yes</ion-option>
         <ion-option>No</ion-option>
       </ion-select>
-    </ion-item>    
+    </ion-item>
   </ion-list>
-
-  <button type="submit" name="submit">Submit</button>
-
-
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <div class="text-center">
+        <button ion-button round end color="light" (click)="gotoTreatmentPage()">Treatment Plan</button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

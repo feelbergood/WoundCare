@@ -6,8 +6,8 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>patient-list</ion-title>
+  <ion-navbar color="primary">
+    <ion-title><div class="text-center">Patient List </div></ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -21,11 +21,14 @@
     <ion-item>
       <ion-label>Example Patient</ion-label>
     </ion-item>
-    <ion-item>
-      <button (click)="gotoConsent()">New Assessment</button>
-    </ion-item>
-    <ion-item>
-      <button (click)="gotoConsent()">Follow up</button>
-    </ion-item>  
   </ion-list>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <div class="text-center">
+       <button ion-button round color="light" (click)="gotoConsent()">New Assessment</button>
+       <button ion-button round color="light" (click)="gotoConsent()">Follow Up</button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

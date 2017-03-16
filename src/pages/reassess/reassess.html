@@ -6,8 +6,8 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>reassess</ion-title>
+  <ion-navbar color="primary">
+    <ion-title><div class="text-center">Re-Assessment</div></ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -27,7 +27,14 @@
     <ion-item>
       <ion-label>Continue on to reassessment</ion-label>
       <ion-checkbox></ion-checkbox>
-    </ion-item>   
+    </ion-item>
   </ion-list>
-  <button (click)="gotoGene()">Continue</button>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <div class="text-center">
+       <button ion-button round color="light" (click)="gotoGene()">Continue</button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

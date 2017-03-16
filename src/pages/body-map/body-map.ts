@@ -1,7 +1,7 @@
 
 import { Component, ViewChild} from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { GeneralAssessPage } from '../general-assess/general-assess';
+import { GenericWoundPage } from '../generic-wound/generic-wound';
 
 /*
   Generated class for the BodyMap page.
@@ -22,7 +22,7 @@ export class BodyMapPage {
   }
 
   gotoGene(){
-    this.navCtrl.push(GeneralAssessPage);
+    this.navCtrl.push(GenericWoundPage);
   }
 
 }

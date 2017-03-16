@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { TestPage } from '../test/test';
+import { SearchPatientPage } from '../search-patient/search-patient';
 
 @Component({
   selector: 'page-home',
@@ -12,8 +12,8 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
   }
 
-  gotoTest(){
-    this.navCtrl.push(TestPage);
+  gotoSearchPatientPage(){
+    this.navCtrl.push(SearchPatientPage);
   }
 
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { TreatmentPage } from '../treatment/treatment';
 
 /*
   Generated class for the WoundOther page.
@@ -17,6 +18,10 @@ export class WoundOtherPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WoundOtherPage');
+  }
+
+  gotoTreatmentPage(){
+    this.navCtrl.push(TreatmentPage);
   }
 
 }

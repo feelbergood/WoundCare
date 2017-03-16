@@ -1,0 +1,236 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title><div class="text-center">Generic Wound Assessment</div></ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+
+<div class="p"><h5>Number of wounds</h5></div>
+    <ion-item>
+      <ion-select [(ngModel)]="venous">
+        <ion-option>1</ion-option>
+        <ion-option>2</ion-option>
+        <ion-option>3</ion-option>
+        <ion-option>4</ion-option>
+        <ion-option>5</ion-option>
+      </ion-select>
+    </ion-item>
+
+  <div class="p"><h5>Descriptor</h5></div>
+  <div class="p"><h5>Ulcer Location</h5></div>
+  <ion-item>
+    <ion-select [(ngModel)]="venous">
+      <ion-option>Leg</ion-option>
+      <ion-option>Foot</ion-option>
+      <ion-option>Sacrum</ion-option>
+      <ion-option>Other</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Other : please specify</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+
+
+  <div class="p"><h5>Ulcer Size</h5></div>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+        <ion-label>Width</ion-label>
+        <ion-input type="text" value=""></ion-input>
+       </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+        <ion-label>Height</ion-label>
+        <ion-input type="text" value=""></ion-input>
+       </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="p"><h5>Ulcer duration</h5></div>
+      <ion-item>
+        <ion-select [(ngModel)]="venous">
+          <ion-option>1</ion-option>
+          <ion-option>2</ion-option>
+          <ion-option>3</ion-option>
+          <ion-option>4</ion-option>
+          <ion-option>5</ion-option>
+          <ion-option>Other</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Other : please specify</ion-label>
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>
+
+
+      <div class="p"><h5>Ulcer tissue appearance</h5></div>
+          <ion-item>
+            <ion-select [(ngModel)]="venous">
+              <ion-option>Necrotic</ion-option>
+              <ion-option>Sloughy</ion-option>
+              <ion-option>Granulating</ion-option>
+              <ion-option>Epithelializing</ion-option>
+              <ion-option>Combination of necrotic and sloughy</ion-option>
+              <ion-option>Combination of sloughy and granulating</ion-option>
+              <ion-option>Combination of granulating and epithelialising</ion-option>
+              <ion-option>Combination of necrotic sloughy and granulating tissue</ion-option>
+              <ion-option>Over granulation</ion-option>
+              <ion-option>Haematoma</ion-option>
+              <ion-option>Discoloured tissue, classification not yet stageable</ion-option>
+            </ion-select>
+          </ion-item>
+
+
+          <div class="p"><h5>Ulcer margin</h5></div>
+              <ion-item>
+                <ion-select [(ngModel)]="venous">
+                  <ion-option>Shallow</ion-option>
+                  <ion-option>Deep</ion-option>
+                  <ion-option>Mixed</ion-option>
+                  <ion-option>Other</ion-option>
+                </ion-select>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Other : please specify</ion-label>
+                <ion-input type="text" value=""></ion-input>
+              </ion-item>
+
+              <div class="p"><h5>Level of exudate</h5></div>
+                  <ion-item>
+                    <ion-select [(ngModel)]="venous">
+                      <ion-option>Small</ion-option>
+                      <ion-option>Medium</ion-option>
+                      <ion-option>Large</ion-option>
+                      <ion-option>Other</ion-option>
+                    </ion-select>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>Other : please specify</ion-label>
+                    <ion-input type="text" value=""></ion-input>
+                  </ion-item>
+
+  <div class="p"><h5>Surrounding skin</h5></div>
+      <ion-item>
+          <ion-select [(ngModel)]="venous">
+              <ion-option>Healthy/intact</ion-option>
+              <ion-option>Dry/scaly</ion-option>
+              <ion-option>Eczema</ion-option>
+              <ion-option>Maceration</ion-option>
+              <ion-option>Excoriation</ion-option>
+              <ion-option>Fragile</ion-option>
+              <ion-option>Ischaemic</ion-option>
+              <ion-option>Oedematous</ion-option>
+         </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Other : please specify</ion-label>
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>
+
+
+      <div class="p"><h5>Undermining to ulcer</h5></div>
+          <ion-item>
+            <ion-select [(ngModel)]="venous">
+              <ion-option>Yes</ion-option>
+              <ion-option>No</ion-option>
+            </ion-select>
+          </ion-item>
+
+          <div class="p"><h5>Ulcer Swab</h5></div>
+              <ion-item>
+                <ion-select [(ngModel)]="venous">
+                  <ion-option>Yes</ion-option>
+                  <ion-option>No</ion-option>
+                  <ion-option>Other</ion-option>
+                </ion-select>
+              </ion-item>
+              <ion-item>
+                <ion-label>Other : please specify</ion-label>
+                <ion-input type="text" value=""></ion-input>
+              </ion-item>
+
+              <div class="p"><h5>X-ray</h5></div>
+                  <ion-item>
+                    <ion-select [(ngModel)]="venous">
+                      <ion-option>Yes</ion-option>
+                      <ion-option>No</ion-option>
+                      <ion-option>Other</ion-option>
+                    </ion-select>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>Other : please specify</ion-label>
+                    <ion-input type="text" value=""></ion-input>
+                  </ion-item>
+
+                  <div class="p"><h5>Biopsy</h5></div>
+                      <ion-item>
+                        <ion-select [(ngModel)]="venous">
+                          <ion-option>Yes</ion-option>
+                          <ion-option>No</ion-option>
+                          <ion-option>Other</ion-option>
+                        </ion-select>
+                      </ion-item>
+                      <ion-item>
+                        <ion-label>Ankle circumference(cm)</ion-label>
+                        <ion-input type="text" value=""></ion-input>
+                      </ion-item>
+
+                      <ion-item>
+                        <ion-label>Stocking measurements</ion-label>
+                        <ion-input type="text" value=""></ion-input>
+                      </ion-item>
+    <ion-item>
+      <ion-card>
+        <ion-card-header>
+          Leg ulcer
+        </ion-card-header>
+        <ion-card-content>
+          Example
+        </ion-card-content>
+      </ion-card>
+      <button ion-button round end color="light" (click)="gotoLegulcer()">Enter</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-card>
+        <ion-card-header>
+          Pressure ulcer
+        </ion-card-header>
+        <ion-card-content>
+          Example
+        </ion-card-content>
+      </ion-card>
+      <button ion-button round end color="light" (click)="gotoPreulcer()">Enter</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-card>
+        <ion-card-header>
+          Other
+        </ion-card-header>
+        <ion-card-content>
+          Example
+        </ion-card-content>
+      </ion-card>
+      <button ion-button round end color="light" (click)="gotoOther()">Enter</button>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <div class="text-center">
+      <!--<button ion-button round end color="light" (click)="gotoBodyMapPage()">Body Map</button>-->
+    </div>
+  </ion-toolbar>
+</ion-footer>

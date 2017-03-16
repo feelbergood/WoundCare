@@ -20,7 +20,7 @@ export class GenericMedicalPage {
     console.log('ionViewDidLoad GenericMedicalPage');
   }
 
-  gotoBdmap(){
+  gotoBodyMapPage(){
     this.navCtrl.push(BodyMapPage);
   }
 

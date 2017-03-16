@@ -9,11 +9,17 @@ import { WoundPressurePage } from '../wound-pressure/wound-pressure';
 import { ReviewAssessPage } from '../review-assess/review-assess';
 import { ReassessPage } from '../reassess/reassess';
 import { ConsentPage } from '../consent/consent';
-import { GenericMedicalPage} from '../generic-medical/generic-medical'
-import { HomePage } from '../home/home'
-import { PhotoPage } from '../photo/photo'
-import { BodyMapPage} from '../body-map/body-map'
-
+import { GenericMedicalPage} from '../generic-medical/generic-medical';
+import { HomePage } from '../home/home';
+import { PhotoPage } from '../photo/photo';
+import { BodyMapPage } from '../body-map/body-map';
+import { TreatmentPage } from '../treatment/treatment';
+import { TopicalTherapyPlanPage } from '../topical-therapy-plan/topical-therapy-plan';
+import { VacVerafloPlanPage } from '../vac-veraflo-plan/vac-veraflo-plan';
+import { LarvaePlanPage } from '../larvae-plan/larvae-plan';
+import { SkinTreatmentPage } from '../skin-treatment/skin-treatment';
+import { GenericWoundPage } from '../generic-wound/generic-wound';
+import { FollowUpTreatmentPage } from '../follow-up-treatment/follow-up-treatment'
 /*
   Generated class for the Test page.
 
@@ -32,37 +38,33 @@ export class TestPage {
     console.log('ionViewDidLoad TestPage');
   }
 
-  gotoP1(){
-    this.navCtrl.push(SearchPatientPage);
-  }
-
-  gotoP2(){
+  gotoDbReviewPage(){
     this.navCtrl.push(DbReviewPage);
   }
 
-  gotoP3(){
+  gotoLegulcerPage(){
     this.navCtrl.push(WoundLegulcerPage);
   }
 
-  gotoP4(){
+  gotoPodiatryPage(){
     this.navCtrl.push(WoundPodiatryPage);
   }
 
-  gotoP5(){
+  gotoWoundOtherPage(){
     this.navCtrl.push(WoundOtherPage);
   }
 
-  gotoP6(){
+  gotoPressurePage(){
     this.navCtrl.push(WoundPressurePage);
   }
 
-  gotoP7(){
+  gotoReviewAssessPage(){
     this.navCtrl.push(ReviewAssessPage);
   }
 
-  gotoP8(){
+  gotoReassessPage(){
     this.navCtrl.push(ReassessPage);
-  }  
+  }
   gotoHomePage(){
     this.navCtrl.push(HomePage);
   }
@@ -80,5 +82,27 @@ export class TestPage {
   }
   gotoBodyMapPage(){
     this.navCtrl.push(BodyMapPage);
+  }
+
+  gotoTreatmentPage(){
+    this.navCtrl.push(TreatmentPage);
+  }
+  gotoTopicalPage(){
+    this.navCtrl.push(TopicalTherapyPlanPage);
+  }
+  gotoVacVerafloPage(){
+    this.navCtrl.push(VacVerafloPlanPage);
+  }
+  gotoLarvaePage(){
+    this.navCtrl.push(LarvaePlanPage);
+  }
+  gotoSkinTreatment(){
+    this.navCtrl.push(SkinTreatmentPage);
+  }
+  gotoGenericWoundPage(){
+    this.navCtrl.push(GenericWoundPage);
+  }
+  gotoFollowUpTreatmentPage(){
+    this.navCtrl.push(FollowUpTreatmentPage);
   }
 }

@@ -5,11 +5,9 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>wound-legulcer</ion-title>
+  <ion-navbar color="primary">
+    <ion-title><div class="text-center">Leg Ulcer Assessment</div></ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
@@ -42,8 +40,8 @@
         <ion-option>Hypertension</ion-option>
         <ion-option>Diabetes</ion-option>
         <ion-option>Autoimmune conditon</ion-option>
-        <ion-option>Pale limb on elevation</ion-option>        
-        <ion-option>Dependent rubour</ion-option>             
+        <ion-option>Pale limb on elevation</ion-option>
+        <ion-option>Dependent rubour</ion-option>
       </ion-select>
     </ion-item>
 
@@ -60,10 +58,10 @@
         <ion-option>Phlebitis</ion-option>
         <ion-option>Cellulitis</ion-option>
         <ion-option>Prolonged bedrest/leg surgery/trauma</ion-option>
-        <ion-option>Previous joint replacement</ion-option>            
-      </ion-select>      
+        <ion-option>Previous joint replacement</ion-option>
+      </ion-select>
     </ion-item>
-  
+
     <ion-item>
       <ion-label>
         Induration
@@ -77,16 +75,16 @@
         <ion-select [(ngModel)]="Induration-left">
           <ion-option value="y" selected="true">Yes</ion-option>
           <ion-option value="n">No</ion-option>
-        </ion-select>  
+        </ion-select>
       </ion-item>
-    <ion-item>    
+    <ion-item>
         <ion-label>
           Right leg
         </ion-label>
         <ion-select [(ngModel)]="Induration-right">
           <ion-option value="y" selected="true">Yes</ion-option>
           <ion-option value="n">No</ion-option>
-        </ion-select>       
+        </ion-select>
     </ion-item>
 
     <ion-item>
@@ -102,16 +100,16 @@
         <ion-select [(ngModel)]="Staining-left">
           <ion-option value="y" selected="true">Yes</ion-option>
           <ion-option value="n">No</ion-option>
-        </ion-select>  
+        </ion-select>
       </ion-item>
-    <ion-item>    
+    <ion-item>
         <ion-label>
           Right leg
         </ion-label>
         <ion-select [(ngModel)]="Staining-right">
           <ion-option value="y" selected="true">Yes</ion-option>
           <ion-option value="n">No</ion-option>
-        </ion-select>       
+        </ion-select>
     </ion-item>
 
     <ion-item>
@@ -126,16 +124,16 @@
         <ion-select [(ngModel)]="Varicose-left">
           <ion-option value="y" selected="true">Yes</ion-option>
           <ion-option value="n">No</ion-option>
-        </ion-select>  
+        </ion-select>
       </ion-item>
-    <ion-item>    
+    <ion-item>
         <ion-label>
           Right leg
         </ion-label>
         <ion-select [(ngModel)]="Varicose-right">
           <ion-option value="y" selected="true">Yes</ion-option>
           <ion-option value="n">No</ion-option>
-        </ion-select>       
+        </ion-select>
     </ion-item>
 
     <ion-item>
@@ -151,16 +149,16 @@
         <ion-select [(ngModel)]="Atrophie-left">
           <ion-option value="y" selected="true">Yes</ion-option>
           <ion-option value="n">No</ion-option>
-        </ion-select>  
+        </ion-select>
       </ion-item>
-    <ion-item>    
+    <ion-item>
         <ion-label>
           Right leg
         </ion-label>
         <ion-select [(ngModel)]="Atrophie-right">
           <ion-option value="y" selected="true">Yes</ion-option>
           <ion-option value="n">No</ion-option>
-        </ion-select>       
+        </ion-select>
     </ion-item>
 
     <ion-item>
@@ -176,18 +174,18 @@
         <ion-select [(ngModel)]="Ankle-left">
           <ion-option value="y" selected="true">Yes</ion-option>
           <ion-option value="n">No</ion-option>
-        </ion-select>  
+        </ion-select>
       </ion-item>
-    <ion-item>    
+    <ion-item>
         <ion-label>
           Right leg
         </ion-label>
         <ion-select [(ngModel)]="Ankle-right">
           <ion-option value="y" selected="true">Yes</ion-option>
           <ion-option value="n">No</ion-option>
-        </ion-select>       
+        </ion-select>
     </ion-item>
-    
+
     <ion-item>
       <ion-label>
         Ankle brachial pressure measurement
@@ -215,8 +213,8 @@
         <ion-option>Traiphasic</ion-option>
         <ion-option>Biphasic</ion-option>
         <ion-option>Monophasic</ion-option>
-        <ion-option>Unable to detect</ion-option>         
-      </ion-select>  
+        <ion-option>Unable to detect</ion-option>
+      </ion-select>
     </ion-item>
     <ion-item>
       <ion-label class="range">
@@ -242,8 +240,8 @@
         <ion-option>Traiphasic</ion-option>
         <ion-option>Biphasic</ion-option>
         <ion-option>Monophasic</ion-option>
-        <ion-option>Unable to detect</ion-option>         
-      </ion-select>  
+        <ion-option>Unable to detect</ion-option>
+      </ion-select>
     </ion-item>
     <ion-item>
       <ion-label class="range">
@@ -269,8 +267,8 @@
         <ion-option>Traiphasic</ion-option>
         <ion-option>Biphasic</ion-option>
         <ion-option>Monophasic</ion-option>
-        <ion-option>Unable to detect</ion-option>         
-      </ion-select>  
+        <ion-option>Unable to detect</ion-option>
+      </ion-select>
     </ion-item>
     <ion-item>
       <ion-label class="range">
@@ -328,8 +326,8 @@
         <ion-option>Traiphasic</ion-option>
         <ion-option>Biphasic</ion-option>
         <ion-option>Monophasic</ion-option>
-        <ion-option>Unable to detect</ion-option>         
-      </ion-select>  
+        <ion-option>Unable to detect</ion-option>
+      </ion-select>
     </ion-item>
     <ion-item>
       <ion-label class="range">
@@ -355,8 +353,8 @@
         <ion-option>Traiphasic</ion-option>
         <ion-option>Biphasic</ion-option>
         <ion-option>Monophasic</ion-option>
-        <ion-option>Unable to detect</ion-option>         
-      </ion-select>  
+        <ion-option>Unable to detect</ion-option>
+      </ion-select>
     </ion-item>
     <ion-item>
       <ion-label class="range">
@@ -382,8 +380,8 @@
         <ion-option>Traiphasic</ion-option>
         <ion-option>Biphasic</ion-option>
         <ion-option>Monophasic</ion-option>
-        <ion-option>Unable to detect</ion-option>         
-      </ion-select>  
+        <ion-option>Unable to detect</ion-option>
+      </ion-select>
     </ion-item>
     <ion-item>
       <ion-label class="range">
@@ -432,10 +430,16 @@
     <ion-item>
       <ion-select [(ngModel)]="peroneal">
         <ion-option>Yes</ion-option>
-        <ion-option>No</ion-option>       
-      </ion-select> 
+        <ion-option>No</ion-option>
+      </ion-select>
     </ion-item>
   </ion-list>
-<button (click)="gotoPod()">Submit</button>
-
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <div class="text-center">
+      <button ion-button round end color="light" (click)="gotoPod()">Submit (podiatry)</button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

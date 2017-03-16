@@ -1,0 +1,151 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title><div class="text-center">Treatment Care Plan</div></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-item *ngFor="let item of items"></ion-item>
+<div class="p"><h5>Generic</h5></div>
+<ion-list>
+  <ion-item>
+    <ion-select multiple="true">
+      <ion-option value="1">Cleanse with warm normal saline if necessary</ion-option>
+      <ion-option value="2">Cleanse with warm water or in the shower</ion-option>
+      <ion-option value="3">Hyderate non-ulcerated areas of the leg with emollients</ion-option>
+    </ion-select>
+  </ion-item>
+
+<div class="p"><h5>Specialist dressing treatment plan</h5></div>
+  <ion-item>
+  <ion-select multiple="true">
+  <ion-option value="1">Vac therapy</ion-option>
+  <ion-option value="2">Vac VeraFlo</ion-option>
+  <ion-option value="3">Larvae</ion-option>
+  </ion-select>
+  </ion-item>
+
+  <div class="p"><h6>If yes, :-	(Mrs xxx free text) is at (drop box risk/high/very high risk) of developing pressure ulceration.</h6></div>
+  <div class="p"><h5>Risk of pressure ulceration</h5></div>
+  <ion-item>
+  <ion-select>
+  <ion-option value="1">Yes</ion-option>
+    <ion-option value="2">No</ion-option>
+    </ion-select>
+    </ion-item>
+
+<div class="p"><h5>Emollients</h5></div>
+  <ion-item>
+  <ion-select multiple="true">
+  <ion-option value="1">Dermol</ion-option>
+    <ion-option value="2">Doublebase cream</ion-option>
+    </ion-select>
+    </ion-item>
+
+<div class="p"><h5>Dressing</h5></div>
+  <ion-item>
+  <ion-select multiple="true">
+  <ion-option value="1">Atrauman</ion-option>
+    <ion-option value="2">Aquacel</ion-option>
+    <ion-option value="3">Aquacel Ag</ion-option>
+    <ion-option value="4">Activheal</ion-option>
+    <ion-option value="5">Actiform Cool</ion-option>
+    <ion-option value="6">Acticoat Flex</ion-option>
+    <ion-option value="7">Activon honey /tulle</ion-option>
+    <ion-option value="8">Adaptic Touch</ion-option>
+    <ion-option value="9">Biatain</ion-option>
+    <ion-option value="10">Biatain silicone</ion-option>
+        <ion-option value="11">Cutimed sorbact</ion-option>
+    <ion-option value="12">Inadine </ion-option>
+    </ion-select>
+    </ion-item>
+
+<div class="p"><h5>Secondary dressings</h5></div>
+  <ion-item>
+  <ion-select multiple="true">
+  <ion-option value="1">Absorbent pad</ion-option>
+    <ion-option value="2">Biatain</ion-option>
+        <ion-option value="3">Biatain silicone</ion-option>
+    <ion-option value="4">Activheal</ion-option>
+    <ion-option value="5">Zetuvit</ion-option>
+    </ion-select>
+    </ion-item>
+
+<div class="p"><h5>Rationale</h5></div>
+  <ion-item>
+  <ion-select>
+  <ion-option value="1">To keep necrotic tissue dry, reduce the risk of wet gangrene and reduce the risk of infection.</ion-option>
+    <ion-option value="2">To hydrate necrotic tissue and aid debridement of necrotic tissue.</ion-option>
+    <ion-option value="3">To hydrate the slough and aid debridement of sloughy tissue.</ion-option>
+    <ion-option value="4">To hydrate slough and absorb exudate to aid the debridement of wet slough.</ion-option>
+    <ion-option value="5">To absorb exudate and promote a moist environment at the wound/ulcer surface.</ion-option>
+    <ion-option value="6">To prevent the wound/ulcer drying out and to promote epithelialisation.</ion-option>
+    <ion-option value="7">To act as an antimicrobial restoring bacterial balance to the wound/ulcer to promote healing.</ion-option>
+    <ion-option value="8">To reduce the biofilm to the wound/ulcer surface. </ion-option>
+    </ion-select>
+    </ion-item>
+
+<div class="p"><h5>Bandage regime</h5></div>
+  <ion-item>
+  <ion-select>
+  <ion-option value="1">Application of an orthopaedic wool and K lite bandage from toe to knee to retain dressings.</ion-option>
+    <ion-option value="2">Application of an orthopaedic wool and K lite bandage from toe to ankle to retain dressings.</ion-option>
+      <ion-option value="3">Application of an orthopaedic wool and two K lite bandages from toe to knee to retain dressings and offer a limited level of pressure to promote venous return and reduce oedema in patients who have peripheral arterial disease.</ion-option>
+  <ion-option value="4">Application of a 3-layer bandage consisting of an orthopaedic wool, K lite and K Plus bandage from toe to knee to acknowledge arterial disease, promote venous return and reduce oedema to the limb.  </ion-option>
+  <ion-option value="5">Application of a 4-layer bandage consisting of an orthopaedic wool, K lite, K Plus and Ko Flex bandage from toe to knee to promote venous return. </ion-option>
+  <ion-option value="6">As the ankle circumference is greater than 25 cm apply a 4-layer bandage consisting of an orthopaedic wool, K Plus, K Plus and Ko Flex bandage from toe to knee to promote venous return.</ion-option>
+  <ion-option value="7">Application of a K Two bandage from toe to knee to promote venous return.</ion-option>
+  <ion-option value="8">Application of a K Two light bandage from toe to knee to acknowledge arterial disease, promote venous return and reduce oedema to the limb.</ion-option>
+  <ion-option value="9">Application of an Activa 40 mmHg Leg Ulcer Hosiery Kit to promote venous return</ion-option>
+      <ion-option value="10">Application of a hosiery liner to offer 10 mmHg of reduced compression at the ankle to acknowledge arterial disease, promote venous return and reduce oedema to the limb.  </ion-option>
+    <ion-option value="11"> Application of a farrow wrap to promote venous return and reduce oedema.</ion-option>
+    <ion-option value="12">Application of a Juxta Cures wrap to promote venous return and reduce oedema.</ion-option>
+    <ion-option value="13">Use of a K Lite bandage to retain dressings.</ion-option>
+    </ion-select>
+    </ion-item>
+
+
+<div class="p"><h5>Frequency of dressings</h5></div>
+  <ion-item>
+  <ion-select>
+  <ion-option value="1">Change dressings daily to observe and monitor the wound/ulcer.</ion-option>
+    <ion-option value="2">Change alternate days</ion-option>
+        <ion-option value="3">Change three times a week</ion-option>
+    <ion-option value="4">Change twice weekly</ion-option>
+    <ion-option value="5">Change weekly</ion-option>
+    <ion-option value="6">Change alternate days initially but assess the level of wound/ulcer exudate to dictate the exact timescale of dressing changes. </ion-option>
+ </ion-select>
+    </ion-item>
+
+
+ <div class="p"><h5>Tissue viability</h5></div>
+    <ion-item>
+      <ion-label>Enter text</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+<div class="p"><h5>Vascular nurse team</h5></div>
+    <ion-item>
+      <ion-label>Enter text</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+
+<div class="p"><h5>Podiatry</h5></div>
+    <ion-item>
+      <ion-label>Enter text</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+   <ion-footer>
+     <ion-toolbar color="primary">
+       <div class="text-center">
+         <button ion-button round end color="light" (click)="gotoTopicalTherapyPlanPage()">Topical Therapy Specialist Treatment Plan</button>
+         <button ion-button round end color="light" (click)="gotoVacVerafloPlanPage()">Vac VeraFlo Treatment Plan</button>
+         <button ion-button round end color="light" (click)="gotoLarvaePlanPage()">Larvae Specialist Treatment Plan</button>
+         <button ion-button round end color="light" (click)="gotoSkinTreatmentPage()">Skin Treatment Plan</button>
+       </div>
+     </ion-toolbar>
+   </ion-footer>

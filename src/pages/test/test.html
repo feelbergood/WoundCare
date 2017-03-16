@@ -5,63 +5,31 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>test</ion-title>
+    <ion-title> <div class="text-center"> test </div> </ion-title>
   </ion-navbar>
-
-</ion-header>  
-
+</ion-header>
 <ion-content padding>
   <ion-list>
-    <ion-item>  
-      <button (click)="gotoP1()" ion-button full>Search Patient</button> 
-    </ion-item>
-    <ion-item>
-      <button (click)="gotoP2()" ion-button full>Db Review</button> 
-    </ion-item>
-    <ion-item>
-      <button (click)="gotoP3()" ion-button full>Leg Ulcer</button> 
-    </ion-item>
-    <ion-item>
-      <button (click)="gotoP4()" ion-button full>Podiatry</button> 
-    </ion-item>
-    <ion-item>  
-      <button (click)="gotoP5()" ion-button full>Other</button> 
-    </ion-item>
-    <ion-item>
-      <button (click)="gotoP6()" ion-button full>Pressure</button> 
-    </ion-item>
-    <ion-item>
-      <button (click)="gotoP7()" ion-button full>Assessment Review</button> 
-    </ion-item>
-    <ion-item>
-      <button (click)="gotoP8()" ion-button full>Reassessment</button> 
-    </ion-item>  
-    <ion-item>
       <button (click)='gotoHomePage()' ion-button full>Home</button>
-    </ion-item>
-    <ion-item>
       <button (click)='gotoSearchPatientPage()' ion-button full>Search Patient</button>
-    </ion-item>
-    <ion-item>
+      <button (click)="gotoDbReviewPage()" ion-button full>Database Review</button>
       <button (click)='gotoConsentPage()' ion-button full>Consent</button>
-    </ion-item>
-    <ion-item> 
       <button (click)='gotoPhotoPage()' ion-button full>Take photo</button>
-    </ion-item>
-    <ion-item>
       <button (click)='gotoGenericMedicalPage()' ion-button full>Generic Medical Assessment</button>
-    </ion-item>
-    <ion-item>  
       <button (click)='gotoBodyMapPage()' ion-button full>Body Map</button>
-    </ion-item>
-          
-      
-
-
-  
-
-
+      <button (click)='gotoGenericWoundPage()' ion-button full>Generic Wound Assessment</button>
+      <button (click)="gotoLegulcerPage()" ion-button full>Leg Ulcer</button>
+      <button (click)="gotoPodiatryPage()" ion-button full>Podiatry</button>
+      <button (click)="gotoWoundOtherPage()" ion-button full>Other</button>
+      <button (click)="gotoPressurePage()" ion-button full>Pressure</button>
+      <button (click)="gotoReviewAssessPage()" ion-button full>Assessment Review</button>
+      <button (click)="gotoReassessPage()" ion-button full>Reassessment</button>
+      <button (click)="gotoTreatmentPage()" ion-button full>Treatment Plan</button>
+      <button (click)="gotoFollowUpTreatmentPage()" ion-button full>Follow-up Treatment Plan</button>
+      <button (click)="gotoTopicalPage()" ion-button full>Topical Negative Pressure Therapy Specialist Treatment Plan</button>
+      <button (click)="gotoVacVerafloPage()" ion-button full>Vac VeraFlo Specialist Treatment Plan</button>
+      <button (click)="gotoLarvaePage()" ion-button full>Larvae Specialist Treatment Plan</button>
+      <button (click)="gotoSkinTreatment()" ion-button full>Skin Treatment Plan</button>
   </ion-list>
 </ion-content>

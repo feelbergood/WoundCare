@@ -6,8 +6,8 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>review-assess</ion-title>
+  <ion-navbar color="primary">
+    <ion-title><div class="text-center">Review Assessment</div></ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -24,7 +24,7 @@
           Generic Medical Contents
         </ion-card-content>
       </ion-card>
-    </ion-item> 
+    </ion-item>
     <ion-item>
       <ion-card>
         <ion-card-header>
@@ -34,7 +34,7 @@
           Generic Wound Contents
         </ion-card-content>
       </ion-card>
-    </ion-item>    
+    </ion-item>
     <ion-item>
       <ion-card>
         <ion-card-header>
@@ -44,7 +44,7 @@
           Specialist Wound Contents
         </ion-card-content>
       </ion-card>
-    </ion-item> 
+    </ion-item>
     <ion-item>
       <ion-card>
         <ion-card-header>
@@ -54,10 +54,14 @@
           Treatment Care Plan Contents
         </ion-card-content>
       </ion-card>
-    </ion-item> 
-  </ion-list> 
-
-  <button (click)="gotoReass()">Reassess</button>
-  <button (click)="gotoFup()">Follow Up</button>
-
+    </ion-item>
+  </ion-list>
 </ion-content>
+<ion-footer>
+  <ion-toolbar color="primary">
+    <div class="text-center">
+       <button ion-button round color="light" (click)="gotoReass()">Reassess</button>
+       <button ion-button round color="light" (click)="gotoFup()">Follow Up</button>
+    </div>
+  </ion-toolbar>
+</ion-footer>
